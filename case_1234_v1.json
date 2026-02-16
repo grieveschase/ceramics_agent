@@ -1,0 +1,371 @@
+{
+  "case_id": "1234",
+  "coverage": {
+    "agent_name": "Image QA + View Coverage Auditor",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-02T12:00:00Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.95,
+    "notes": "The image set lacks some critical views that could provide a comprehensive understanding of the pottery piece. The existing images cover the base and some views of the vase, but there are no complete side or top views for thorough examination.",
+    "case_id": "1234",
+    "coverage_score_0_1": 0.7,
+    "quality_flags": [
+      "blur",
+      "glare"
+    ],
+    "views_present": {
+      "front": false,
+      "back": false,
+      "left": true,
+      "right": true,
+      "top": false,
+      "interior": false,
+      "base": true,
+      "base_macro": true,
+      "signature_macro": false
+    },
+    "missing_high_value_views": [
+      {
+        "view": "Top",
+        "why_it_matters": "The top view gives insight into the opening diameter, the rim's style, and any designs on the top surface.",
+        "how_to_shoot": "Position the camera directly above the pottery parallel to the rim, ensuring even lighting to avoid shadows."
+      },
+      {
+        "view": "Front",
+        "why_it_matters": "A direct frontal view provides symmetry and the full design context, helping in identifying patterns and shapes characteristic of certain styles.",
+        "how_to_shoot": "Align the camera with the center of the vase, ensuring it's at the same height to capture a level image."
+      },
+      {
+        "view": "Interior",
+        "why_it_matters": "The interior view can reveal structural details or maker's marks not visible in other views.",
+        "how_to_shoot": "Use a light source to illuminate the interior, and angle the camera slightly downward to capture the inside surface."
+      }
+    ]
+  },
+  "visual_evidence": {
+    "agent_name": "Visual Evidence Extractor",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-06T09:30:00Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.95,
+    "notes": "The glaze exhibits crazing, indicating age or firing inconsistencies.",
+    "case_id": "1234",
+    "evidence": {
+      "object_class": "vase",
+      "estimated_material": {
+        "label": "porcelain",
+        "confidence_0_1": 0.85,
+        "rationale": [
+          "Fine texture and translucency suggest porcelain."
+        ]
+      },
+      "construction": {
+        "method": "unknown",
+        "indicators": [],
+        "foot_type": "unknown",
+        "seams_present": false
+      },
+      "form_geometry": {
+        "symmetry": "symmetric",
+        "neck": "short",
+        "shoulder": "rounded",
+        "rim": "straight",
+        "proportions_notes": [
+          "The vase is well-proportioned with a bulbous body and narrow neck."
+        ]
+      },
+      "glaze_surface": {
+        "sheen": "gloss",
+        "effects": [
+          "crazing"
+        ],
+        "color_behavior_notes": [
+          "Gradient glaze with some running effects at the top."
+        ],
+        "application_method_guess": "unknown",
+        "wear_notes": [
+          "Some surface wear visible especially near the base."
+        ]
+      },
+      "decoration": {
+        "presence": "minimal",
+        "motif_categories": [
+          "abstract"
+        ],
+        "technique_guess": "overglaze_enamel",
+        "layout_notes": [
+          "Simple and abstract patterns with flowing transitions."
+        ]
+      },
+      "aging_condition": {
+        "condition_score_0_10": 6.0,
+        "flags": [
+          "chips",
+          "chips",
+          "chips",
+          "none_detected",
+          "none_detected",
+          "none_detected"
+        ],
+        "rationale": [
+          "Visible crazing",
+          "Minor chips at the foot."
+        ]
+      }
+    }
+  },
+  "marks_report": {
+    "agent_name": "Marks & Base Specialist",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-06T14:28:00Z",
+    "input_image_ids_used": [
+      "img_00"
+    ],
+    "confidence_0_1": 0.9,
+    "notes": "The mark is difficult to fully interpret due to low legibility, but it appears to have letters and possibly a sunburst-like symbol.",
+    "case_id": "1234",
+    "marks_present": true,
+    "marks": [
+      {
+        "mark_type": "impressed",
+        "location": "base",
+        "text_or_symbols": "806\n(possibly other numbers/letters)",
+        "legibility": "low",
+        "under_over_glaze": "under",
+        "interpretation_notes": [
+          "The top of the mark appears to have a sunburst or floral pattern.",
+          "The numbers '806' are visible.",
+          "Other letters or numbers are present but unclear."
+        ]
+      }
+    ],
+    "photo_instructions_if_unclear": [
+      "Take a macro shot focusing on the marks.",
+      "Use raking light from different angles to increase contrast."
+    ]
+  },
+  "hypotheses": {
+    "agent_name": "Hypothesis Generator",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-06T15:00:00Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.85,
+    "notes": "The analysis considers available visual evidence, marks, and pottery features. Confidence is reduced due to missing views and unclear marks.",
+    "case_id": "1234",
+    "hypotheses": [
+      {
+        "rank": 1,
+        "candidate_label": "European Studio Pottery",
+        "maker_or_cluster": "Possible German Workshop",
+        "region": "Europe",
+        "date_range": "Late 19th to Early 20th Century",
+        "confidence_0_1": 0.65,
+        "supporting_evidence": [
+          "Crazing suggests age and traditional firing techniques.",
+          "Abstract enamel decoration fits European studio style.",
+          "Base mark with possible numbers and floral pattern reminiscent of European maker marks."
+        ],
+        "contradictions": [
+          "The mark's legibility is low, reducing certainty.",
+          "Absence of comprehensive side and top views limits form analysis."
+        ],
+        "highest_value_test": {
+          "request": "Compare the impressed mark with known European studio pottery marks from the late 19th to early 20th century.",
+          "expected_result_if_true": "A match or similar style confirms European production.",
+          "expected_result_if_false": "No match suggests alternative origin or production date."
+        }
+      },
+      {
+        "rank": 2,
+        "candidate_label": "Asian Porcelain",
+        "maker_or_cluster": "Possibly Chinese",
+        "region": "East Asia",
+        "date_range": "Early to Mid 20th Century",
+        "confidence_0_1": 0.55,
+        "supporting_evidence": [
+          "Porcelain material with translucency hints at East Asian origin.",
+          "Crazing and gloss glaze are common in Chinese porcelain of this era."
+        ],
+        "contradictions": [
+          "Abstract motif is less characteristic of traditional Chinese styles.",
+          "Impressed mark style is uncommon in East Asian porcelain."
+        ],
+        "highest_value_test": {
+          "request": "Analyze glaze and material composition for signature Chinese elements.",
+          "expected_result_if_true": "Characteristic elements indicate a likely Chinese origin.",
+          "expected_result_if_false": "Absence of these elements suggests a different Asian region or later date."
+        }
+      },
+      {
+        "rank": 3,
+        "candidate_label": "American Arts and Crafts Movement",
+        "maker_or_cluster": "Possible American Studio Pottery",
+        "region": "North America",
+        "date_range": "Early 20th Century",
+        "confidence_0_1": 0.5,
+        "supporting_evidence": [
+          "Abstract and minimal decoration aligns with Arts and Crafts aesthetics.",
+          "Porcelain usage and glaze effects were popular in early American studio pieces."
+        ],
+        "contradictions": [
+          "Typical marks from this period in America are missing or unclear.",
+          "Form proportions and crazing also common in European pieces."
+        ],
+        "highest_value_test": {
+          "request": "Review existing American Arts and Crafts movement pottery for similar features and marks.",
+          "expected_result_if_true": "Distinct similarities suggest American production.",
+          "expected_result_if_false": "Divergence points to European or other origins."
+        }
+      },
+      {
+        "rank": 4,
+        "candidate_label": "Mid-Century Scandinavian Design",
+        "maker_or_cluster": "Possible Nordic Origin",
+        "region": "Scandinavia",
+        "date_range": "Mid 20th Century",
+        "confidence_0_1": 0.45,
+        "supporting_evidence": [
+          "Simple form and glaze may reflect Scandinavian minimalism.",
+          "Crazing and gradient coloration are used in mid-century Nordic designs."
+        ],
+        "contradictions": [
+          "Lack of specific Scandinavian motifs or signatures.",
+          "Possible earlier date indicated by age-related wear."
+        ],
+        "highest_value_test": {
+          "request": "Match glaze and form characteristics with Scandinavian pottery designs from the mid-20th century.",
+          "expected_result_if_true": "Greater alignment supports a Scandinavian attribution.",
+          "expected_result_if_false": "Mismatch suggests looking at other European regions or time periods."
+        }
+      }
+    ]
+  },
+  "final_attribution": {
+    "agent_name": "Contradiction Resolver",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-06T15:30:00Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.6,
+    "notes": "The analysis was hindered by missing top and interior views, limiting assessment of form and potential concealed marks. The mark is low legibility, no decisive identification possible. Calibration suggests confining hypotheses to broader regional or style categories where possible.",
+    "case_id": "1234",
+    "final": {
+      "top_3": [
+        {
+          "rank": 1,
+          "attribution": "European Studio Pottery (Possible German Workshop)",
+          "confidence_band": "Medium",
+          "confidence_0_1": 0.6,
+          "why": [
+            "Crazing is reminiscent of traditional European firing techniques.",
+            "Abstract enamel decoration fits European studio style.",
+            "Possible floral pattern in mark resembles European styles."
+          ],
+          "why_not_others": [
+            "Low mark legibility reduces definitive exclusion of other origins.",
+            "Missing views limit confident structural assessment."
+          ],
+          "missing_evidence_penalties": [
+            "Top view needed for opening diameter and design context.",
+            "Interior view could reveal additional maker's marks."
+          ],
+          "what_would_change_mind": [
+            "A more legible mark that closely matches European workshop patterns.",
+            "Internal features or an overglaze signature typical of another region."
+          ]
+        },
+        {
+          "rank": 2,
+          "attribution": "Asian Porcelain (Possibly Chinese)",
+          "confidence_band": "Low",
+          "confidence_0_1": 0.5,
+          "why": [
+            "Porcelain material suggests East Asian origin.",
+            "Crazing and glaze sheen are found in Chinese porcelain."
+          ],
+          "why_not_others": [
+            "Impression-style marks less common in Chinese pottery.",
+            "Decorative style less consistent with Chinese traditional motifs."
+          ],
+          "missing_evidence_penalties": [
+            "Material analysis needed for characteristic elements of Chinese porcelain.",
+            "Top view needed for comprehensive analysis."
+          ],
+          "what_would_change_mind": [
+            "Analysis showing precise composition typical of Chinese porcelain.",
+            "Cultural motifs or patterns not visible from current views."
+          ]
+        },
+        {
+          "rank": 3,
+          "attribution": "American Arts and Crafts Movement",
+          "confidence_band": "Low",
+          "confidence_0_1": 0.45,
+          "why": [
+            "Abstract design aligns with Arts and Crafts aesthetics.",
+            "Glaze and material similar to early 20th century American studios."
+          ],
+          "why_not_others": [
+            "Crazing and proportions also common in European pieces.",
+            "Unclear marks typically expected based on the style and period."
+          ],
+          "missing_evidence_penalties": [
+            "Comparison with known American studio marks would assist identification.",
+            "Comprehensive view of motifs or unique details needed."
+          ],
+          "what_would_change_mind": [
+            "Discovery of marks resembling known Arts and Crafts makers.",
+            "Further unique design traits or form characteristics in unseen views."
+          ]
+        }
+      ],
+      "overall_summary": "The pottery piece's attribution remains uncertain due to low legibility of marks and absence of crucial views, which limits conclusive regional or period identification. The European origin hypothesis holds the strongest support, though improvement in evidence gathering could realign confidence rankings.",
+      "recommended_next_photos": [
+        {
+          "view": "Top",
+          "reason": "To determine opening diameter and rim styles indicative of region-specific designs.",
+          "how_to_shoot": "Position the camera directly above the pottery parallel to the rim, ensuring even lighting to avoid shadows."
+        },
+        {
+          "view": "Interior",
+          "reason": "Potentially reveal structural details or maker's marks not visible in other views.",
+          "how_to_shoot": "Use a light source to illuminate the interior, and angle the camera slightly downward to capture the inside surface."
+        },
+        {
+          "view": "Front",
+          "reason": "Provide total symmetry and full design context, aiding in identifying patterns and shapes.",
+          "how_to_shoot": "Align the camera with the center of the vase, ensuring it's at the same height to capture a level image."
+        },
+        {
+          "view": "Base Macro",
+          "reason": "Improves clarity and confirms interpretation of existing marks.",
+          "how_to_shoot": "Take a macro shot with focus on the existing marks, use raking light from different angles to increase contrast."
+        },
+        {
+          "view": "Side View",
+          "reason": "Enhances understanding of full profile shape and potential overlooked details.",
+          "how_to_shoot": "Capture from both left and right sides, parallel and leveled with the center of the vase."
+        }
+      ]
+    }
+  }
+}

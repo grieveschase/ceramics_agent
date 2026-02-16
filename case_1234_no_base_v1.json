@@ -1,0 +1,343 @@
+{
+  "case_id": "1234",
+  "coverage": {
+    "agent_name": "Image QA + View Coverage Auditor",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-06T12:00:00Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02"
+    ],
+    "confidence_0_1": 0.95,
+    "notes": "Images provide a good coverage of the vase's exterior but lack base and signature details.",
+    "case_id": "1234",
+    "coverage_score_0_1": 0.6,
+    "quality_flags": [],
+    "views_present": {
+      "front": true,
+      "back": true,
+      "left": false,
+      "right": true,
+      "top": false,
+      "interior": false,
+      "base": false,
+      "base_macro": false,
+      "signature_macro": false
+    },
+    "missing_high_value_views": [
+      {
+        "view": "Left",
+        "why_it_matters": "Necessary to complete exterior 360-degree view.",
+        "how_to_shoot": "Position the vase so the left side faces the camera directly, ensuring even lighting."
+      },
+      {
+        "view": "Top",
+        "why_it_matters": "Shows the opening and rim details, which are important for identification.",
+        "how_to_shoot": "Angle the camera above the vase to capture the full view of the rim and opening."
+      },
+      {
+        "view": "Base",
+        "why_it_matters": "The base often contains maker's marks or unique features important for identification.",
+        "how_to_shoot": "Turn the vase over, ensuring stable support, and photograph directly over the base."
+      },
+      {
+        "view": "Base Macro",
+        "why_it_matters": "Close-up details can reveal marks or textures not visible in standard shots.",
+        "how_to_shoot": "Use a macro lens or camera mode to closely capture the base's surface details."
+      },
+      {
+        "view": "Signature Macro",
+        "why_it_matters": "Signatures or specific markings are critical for authentication.",
+        "how_to_shoot": "Capture close-up of any inscriptions or marks using a macro setting, ensuring clarity."
+      }
+    ]
+  },
+  "visual_evidence": {
+    "agent_name": "Visual Evidence Extractor",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-03T16:45:00Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02"
+    ],
+    "confidence_0_1": 0.9,
+    "notes": "Analysis based on visual inspection of presented images.",
+    "case_id": "1234",
+    "evidence": {
+      "object_class": "vase",
+      "estimated_material": {
+        "label": "porcelain",
+        "confidence_0_1": 0.85,
+        "rationale": [
+          "The sheen and translucency suggest a high-fired, vitrified ceramic typical of porcelain."
+        ]
+      },
+      "construction": {
+        "method": "wheel_thrown",
+        "indicators": [
+          "Absence of seam lines and consistent curvature suggest wheel-thrown construction."
+        ],
+        "foot_type": "unknown",
+        "seams_present": false
+      },
+      "form_geometry": {
+        "symmetry": "symmetric",
+        "neck": "short",
+        "shoulder": "rounded",
+        "rim": "everted",
+        "proportions_notes": [
+          "Smooth, consistent curvature indicates careful shaping."
+        ]
+      },
+      "glaze_surface": {
+        "sheen": "gloss",
+        "effects": [
+          "crazing",
+          "crystalline"
+        ],
+        "color_behavior_notes": [
+          "The glaze transitions smoothly from darker at the neck to lighter at the base."
+        ],
+        "application_method_guess": "unknown",
+        "wear_notes": [
+          "Minor surface crazing throughout."
+        ]
+      },
+      "decoration": {
+        "presence": "moderate",
+        "motif_categories": [
+          "floral",
+          "abstract"
+        ],
+        "technique_guess": "overglaze_enamel",
+        "layout_notes": [
+          "Decorative elements seem abstractly floral, focusing near the neck of the vase."
+        ]
+      },
+      "aging_condition": {
+        "condition_score_0_10": 7.0,
+        "flags": [
+          "chips",
+          "chips",
+          "chips"
+        ],
+        "rationale": [
+          "Minor chipping visible at the rim, but no major cracks or repairs."
+        ]
+      }
+    }
+  },
+  "marks_report": {
+    "marks_present": false,
+    "marks": []
+  },
+  "hypotheses": {
+    "agent_name": "Hypothesis Generator",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-06T12:05:00Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02"
+    ],
+    "confidence_0_1": 0.75,
+    "notes": "Proposed clusters and attributions based on available visual evidence and context.",
+    "case_id": "1234",
+    "hypotheses": [
+      {
+        "rank": 1,
+        "candidate_label": "Chinese Late Qing Dynasty Porcelain",
+        "maker_or_cluster": "Chinese Workshop",
+        "region": "China",
+        "date_range": "Late 19th to Early 20th Century",
+        "confidence_0_1": 0.8,
+        "supporting_evidence": [
+          "Porcelain material with high sheen.",
+          "Overglaze enamel floral motifs typical of Chinese designs.",
+          "Crazing effect often found on antique Chinese porcelain."
+        ],
+        "contradictions": [
+          "Absence of definitive Chinese hallmark or signature.",
+          "No view of the base to confirm typical unglazed or marked base."
+        ],
+        "highest_value_test": {
+          "request": "Identify specific hallmark or base feature typical of Qing Dynasty.",
+          "expected_result_if_true": "Distinctive hallmark or base detail confirms Qing Dynasty origin.",
+          "expected_result_if_false": "Lack of hallmark or detailing suggests alternative attribution."
+        }
+      },
+      {
+        "rank": 2,
+        "candidate_label": "Art Nouveau European Vase",
+        "maker_or_cluster": "European Art Pottery",
+        "region": "Europe",
+        "date_range": "Late 19th to Early 20th Century",
+        "confidence_0_1": 0.7,
+        "supporting_evidence": [
+          "Abstract floral motifs align with Art Nouveau style.",
+          "Gloss sheen and symmetric, everted rim common in European art pottery.",
+          "Overglaze enamel techniques were popular in Europe during this period."
+        ],
+        "contradictions": [
+          "Lack of distinctive European maker's mark.",
+          "No base view to identify potential European stamps or codes."
+        ],
+        "highest_value_test": {
+          "request": "Confirm presence of European-style artist's mark or insignia.",
+          "expected_result_if_true": "Recognition of typical European marking supports hypothesis.",
+          "expected_result_if_false": "Absence of marks reduces confidence in European attribution."
+        }
+      },
+      {
+        "rank": 3,
+        "candidate_label": "Japanese Kutani Ware",
+        "maker_or_cluster": "Kutani Pottery Workshop",
+        "region": "Japan",
+        "date_range": "Late 19th to Early 20th Century",
+        "confidence_0_1": 0.6,
+        "supporting_evidence": [
+          "Wheel-thrown porcelain aligns with traditional Japanese techniques.",
+          "Overglaze enameling is used in Kutani ware.",
+          "Abstract floral patterns are similar to styles in Kutani production."
+        ],
+        "contradictions": [
+          "No evidence of Kutani characteristic marks or color palette.",
+          "Base and signature views are absent for verification."
+        ],
+        "highest_value_test": {
+          "request": "Investigate base for Kutani mark or stylings.",
+          "expected_result_if_true": "Base with Kutani marking confirms hypothesis.",
+          "expected_result_if_false": "No identifying marks lead to reconsideration of attribution."
+        }
+      },
+      {
+        "rank": 4,
+        "candidate_label": "Contemporary Studio Pottery",
+        "maker_or_cluster": "Modern Ceramic Art Studio",
+        "region": "North America",
+        "date_range": "20th to 21st Century",
+        "confidence_0_1": 0.5,
+        "supporting_evidence": [
+          "Wheel-thrown technique and modern abstract floral designs suggest contemporary art.",
+          "Crazing can be deliberately included in modern ceramics for artistic effect."
+        ],
+        "contradictions": [
+          "Lack of modern signature or identifiable base mark.",
+          "Materials and finish may still be reminiscent of older, traditional techniques."
+        ],
+        "highest_value_test": {
+          "request": "Determine if there is a modern artist signature or inscription.",
+          "expected_result_if_true": "A signature confirms contemporary studio origin.",
+          "expected_result_if_false": "No signature supports older or traditional attribution."
+        }
+      }
+    ]
+  },
+  "final_attribution": {
+    "agent_name": "Contradiction Resolver",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-06T12:10:00Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02"
+    ],
+    "confidence_0_1": 0.75,
+    "notes": "Evaluated hypotheses based on the current evidence and missing information.",
+    "case_id": "1234",
+    "final": {
+      "top_3": [
+        {
+          "rank": 1,
+          "attribution": "Chinese Late Qing Dynasty Porcelain",
+          "confidence_band": "Medium",
+          "confidence_0_1": 0.6,
+          "why": [
+            "The porcelain material and high sheen match Chinese qualities.",
+            "Overglaze enamel floral motifs are often characteristic of Chinese designs.",
+            "Crazing is a common aging characteristic in Qing Dynasty porcelain."
+          ],
+          "why_not_others": [
+            "Lack of European style marks or stamps diminishes confidence in Art Nouveau hypothesis.",
+            "Absence of recognizable Japanese glazing technique or marks weakens the Kutani ware hypothesis."
+          ],
+          "missing_evidence_penalties": [
+            "No view of base or signature to confirm hallmarks.",
+            "Missing left side and top views reduce evidence robustness."
+          ],
+          "what_would_change_mind": [
+            "Finding a definitive Chinese hallmark or mark on the base.",
+            "Evidence of multiple highly distinctive Qing characteristics."
+          ]
+        },
+        {
+          "rank": 2,
+          "attribution": "Art Nouveau European Vase",
+          "confidence_band": "Medium",
+          "confidence_0_1": 0.5,
+          "why": [
+            "Abstract floral motifs and high gloss are consistent with Art Nouveau style.",
+            "Symmetric form and everted rim are indicative of European art pottery."
+          ],
+          "why_not_others": [
+            "The presence of crazing and surface sheen leans towards Chinese rather than European origin.",
+            "No base view to confirm potential European marks."
+          ],
+          "missing_evidence_penalties": [
+            "Absence of base view with potential stamps or artist marks.",
+            "Lack of definitive decoration evidence specific to known European ateliers."
+          ],
+          "what_would_change_mind": [
+            "Identification of a European maker's mark or distinct Art Nouveau detail on the base or body."
+          ]
+        },
+        {
+          "rank": 3,
+          "attribution": "Japanese Kutani Ware",
+          "confidence_band": "Low",
+          "confidence_0_1": 0.4,
+          "why": [
+            "Wheel-thrown porcelain and floral overglaze could suggest Japanese techniques.",
+            "Some similarity in abstract floral patterns to Kutani styles."
+          ],
+          "why_not_others": [
+            "Insufficient evidence of distinct Kutani coloration or traditional Japanese marks.",
+            "Crazing and transitional glaze are less typical of Kutani ware."
+          ],
+          "missing_evidence_penalties": [
+            "Base inspection needed to identify Japanese marks or specific signs of Kutani ware.",
+            "Visual confirmation of expected Kutani glaze or decoration style."
+          ],
+          "what_would_change_mind": [
+            "Discovery of Kutani region-specific marks or glaze features."
+          ]
+        }
+      ],
+      "overall_summary": "The vase is most likely a Chinese Late Qing Dynasty piece based on material and motifs, but the identification remains uncertain due to missing critical views and marks. European Art Nouveau is a plausible alternative, lacking definitive marks.",
+      "recommended_next_photos": [
+        {
+          "view": "Base",
+          "reason": "The base often contains crucial identifying features.",
+          "how_to_shoot": "Turn the vase over carefully on a steady surface, photograph directly above."
+        },
+        {
+          "view": "Signature Macro",
+          "reason": "Critical for identifying maker's marks or inscriptions.",
+          "how_to_shoot": "Use macro settings to capture any base details closely."
+        },
+        {
+          "view": "Top",
+          "reason": "Opening and rim details can provide stylistic and age clues.",
+          "how_to_shoot": "Position the camera overhead to capture the entire opening."
+        },
+        {
+          "view": "Left",
+          "reason": "Completes the 360-degree view of the vase's exterior.",
+          "how_to_shoot": "Align the vase side with the camera for an even-lighted photo."
+        }
+      ]
+    }
+  }
+}

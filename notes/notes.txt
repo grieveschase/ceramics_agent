@@ -1,0 +1,49 @@
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Classification Concepts
+
+Positive Features: Positive evidence, Present features, Affirmative attributes, Inclusion features
+    -These are traits that are directly observed. (positive feature activations)
+
+Negative Features: Negative evidence, Absent features, Exclusion criteria, Non-occurring attributes, Contrastive features
+    -traits that are specifically not present and therefore eliminate possibilities.
+
+The absence of features is just as informative as their presence. Sometimes more informative.
+In classification theory, these are often called discriminative negatives.
+They reduce hypothesis space. "hypothesis space" --> important concept.
+
+
+How Humans Operate when looking at something, ie trying to classify an item, contrastive reasoning:
+    1-Rapid holistic scan
+    2-Activation of candidate style clusters (what does it have that matches others or puts it into a bin)
+    3-Immediate pruning based on missing key markers (what is missing that removes it from that bin)
+    4-Weighted comparison among remaining candidates (Weight Positive and Negative Features in each bin, seek contradictions)
+
+
+Art Style portion in a Pipeline:
+    
+    (a) Observed Features
+        - what was observed
+        - positive features list
+    (b) Explicitly Absent Features
+        - what was not observed
+        - negative features list
+    
+    (c) Eliminated Style Classes
+        - what that rules out
+    (d) Remaining Candidate Styles
+        - what remains plausible
+    (e) Hypotheses
+        - how confident and why.
+
+Epistemology - the theory of knowledge, especially with regard to its methods, validity, and scope.
+Ontology - the branch of metaphysics dealing with the nature of being.
+Posterior Probability - the revised probability of an event or hypothesis occurring after considering new evidence or data,
+                         calculated using Bayes' theorem to update the prior probability.
+
+
+LLMs and Image Analysis.
+"Image understanding in transformers is fundamentally a signal allocation problem. Attention is a limited currency."
+
+

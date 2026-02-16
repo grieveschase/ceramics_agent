@@ -1,0 +1,73 @@
+{
+  "case_id": "12345",
+  "coverage": {
+    "agent_name": "coverage",
+    "agent_version": "1.0",
+    "timestamp_utc": "2023-10-04T21:21:36Z",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.9,
+    "notes": "The images provide a good view of the vase's exterior and a partial view of the base, but lack a macro shot of any markings on the base for clear identification.",
+    "case_id": "12345",
+    "coverage_score_0_1": 0.7,
+    "views_present": {
+      "front": true,
+      "back": true,
+      "left": false,
+      "right": false,
+      "top": true,
+      "interior": false,
+      "base": true,
+      "base_macro": false,
+      "signature_macro": false
+    },
+    "image_assessments": [
+      {
+        "image_id": "img_00",
+        "view_detected": "base",
+        "usable_for_id": true,
+        "quality_flags": [
+          "glare"
+        ],
+        "notes": "Shows the base with a mark, but there is some glare making details hard to read."
+      },
+      {
+        "image_id": "img_01",
+        "view_detected": "front",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Clear view of the front of the vase."
+      },
+      {
+        "image_id": "img_02",
+        "view_detected": "top",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "View showing the top and part of the body of the vase."
+      },
+      {
+        "image_id": "img_03",
+        "view_detected": "back",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Clear back view of the vase."
+      }
+    ],
+    "missing_high_value_views": [
+      {
+        "view": "base_macro",
+        "why_it_matters": "A close-up can reveal signature details and marks crucial for identification.",
+        "how_to_shoot": "Use macro mode, focus closely on the mark area using good lighting to minimize glare."
+      },
+      {
+        "view": "signature_macro",
+        "why_it_matters": "A macro shot of the signature can help in clear identification.",
+        "how_to_shoot": "Focus closely with a steady camera in macro mode to capture the signature sharply."
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+---
+description: Python module conventions for this repo
+globs:
+  - "**/*.py"
+alwaysApply: true
+---
+# Overview
+
+- Read @requirements.txt and/or requirements.txt before writing code.
+- Assume the active interpreter is the project venv (./.venv or ./venv) if it is present.
+- When using any third‑party API, cite the doc page for the installed version and verify the call signature.
+- Prefer using snake case for variable names.
+- When asked to ‘match the output of a function’, preserve keys, dtypes, shapes, and semantics. If unknown, inspect the referenced function before coding.
+- If the request is underspecified, choose the safest reasonable default and state assumptions in 1–3 bullets.

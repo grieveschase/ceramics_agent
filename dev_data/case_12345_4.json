@@ -1,0 +1,172 @@
+{
+  "case_id": "12345",
+  "coverage": {
+    "agent_name": "coverage",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.7,
+    "notes": "Adequate coverage of the object's exterior with some focus on profile views. However, the base, interior, and detailed mark are underrepresented.",
+    "case_id": "12345",
+    "coverage_score_0_1": 0.6,
+    "views_present": {
+      "front": true,
+      "back": true,
+      "left": true,
+      "right": false,
+      "top": true,
+      "interior": false,
+      "base": false,
+      "base_macro": true,
+      "signature_macro": false
+    },
+    "image_assessments": [
+      {
+        "image_id": "img_00",
+        "view_detected": "base_macro",
+        "usable_for_id": true,
+        "quality_flags": [
+          "glare"
+        ],
+        "notes": "Close-up of the base with visible mark but some glare affects readability."
+      },
+      {
+        "image_id": "img_01",
+        "view_detected": "front",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Front view of the vase; details are clear."
+      },
+      {
+        "image_id": "img_02",
+        "view_detected": "top",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Top view showing the rim clearly."
+      },
+      {
+        "image_id": "img_03",
+        "view_detected": "left",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Left profile view, clear and sharp."
+      }
+    ]
+  },
+  "visual_evidence": {
+    "agent_name": "visual_evidence",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.9,
+    "notes": "The glaze shows clear crazing and a gradient color effect. Construction details are less clear due to the absence of visible seams or throwing marks. Base is macro view but has glare.",
+    "case_id": "12345",
+    "evidence": {
+      "object_class": "vase",
+      "key_observations": [
+        "Visible crazing on the surface (img_01).",
+        "Gradient color glaze evident on the form (img_01, img_03).",
+        "Rim appears straight with a slight outward curve (img_02).",
+        "Rounded shoulder transitioning to a long, even body (img_01, img_03).",
+        "No visible seam lines or throwing rings, suggesting possible slip cast or unknown method (img_01, img_03)."
+      ],
+      "limitations": [
+        "Interior not visible.",
+        "Base not fully visible for foot type due to glare (img_00)."
+      ],
+      "estimated_material": {
+        "label": "stoneware",
+        "confidence_0_1": 0.7,
+        "rationale": [
+          "Visible crazing suggests stoneware with a glaze fit issue (img_01).",
+          "Opacity and surface texture typical of stoneware."
+        ],
+        "supporting_image_ids": [
+          "img_01"
+        ]
+      },
+      "construction": {
+        "method": "unknown",
+        "indicators": [
+          "No visible seams or throwing rings.",
+          "Uniform wall thickness."
+        ],
+        "foot_type": "unknown",
+        "seams_present": "unknown",
+        "throwing_rings_present": "unknown",
+        "supporting_image_ids": [
+          "img_01"
+        ]
+      },
+      "form_geometry": {
+        "symmetry": "symmetric",
+        "neck": "medium",
+        "shoulder": "rounded",
+        "rim": "straight",
+        "proportions_notes": [
+          "The vase has a uniform, smooth body with a rounded base and medium neck, typical of modern decorative vases."
+        ],
+        "supporting_image_ids": [
+          "img_01",
+          "img_02",
+          "img_03"
+        ]
+      },
+      "glaze_surface": {
+        "sheen": "gloss",
+        "effects": [
+          "crazing"
+        ],
+        "color_behavior_notes": [
+          "Gradient color from base to rim with pooling of darker color near rim (img_01, img_03)."
+        ],
+        "application_method_guess": "unknown",
+        "wear_notes": [
+          "Crazing present across the surface (img_01)."
+        ],
+        "supporting_image_ids": [
+          "img_01"
+        ]
+      },
+      "decoration": {
+        "presence": "minimal",
+        "motif_categories": [
+          "abstract"
+        ],
+        "technique_guess": "overglaze_enamel",
+        "layout_notes": [
+          "Bold color gradient focusing near the neck rim, minimal decoration on the body."
+        ],
+        "supporting_image_ids": [
+          "img_01"
+        ]
+      },
+      "aging_condition": {
+        "condition_score_0_10": 7.0,
+        "flags": [
+          "chips",
+          "chips",
+          "chips",
+          "chips",
+          "chips",
+          "chips",
+          "chips",
+          "chips"
+        ],
+        "rationale": [
+          "Crazing visible, suggesting age-related glaze issues (img_01).",
+          "Minor chips along the glaze (img_01)."
+        ],
+        "supporting_image_ids": [
+          "img_01"
+        ]
+      }
+    }
+  }
+}

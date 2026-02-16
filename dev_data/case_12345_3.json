@@ -1,0 +1,59 @@
+{
+  "case_id": "12345",
+  "coverage": {
+    "agent_name": "coverage",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.7,
+    "notes": "Adequate coverage of the object's exterior with some focus on profile views. However, the base, interior, and detailed mark are underrepresented.",
+    "case_id": "12345",
+    "coverage_score_0_1": 0.6,
+    "views_present": {
+      "front": true,
+      "back": true,
+      "left": true,
+      "right": false,
+      "top": true,
+      "interior": false,
+      "base": false,
+      "base_macro": true,
+      "signature_macro": false
+    },
+    "image_assessments": [
+      {
+        "image_id": "img_00",
+        "view_detected": "base_macro",
+        "usable_for_id": true,
+        "quality_flags": [
+          "glare"
+        ],
+        "notes": "Close-up of the base with visible mark but some glare affects readability."
+      },
+      {
+        "image_id": "img_01",
+        "view_detected": "front",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Front view of the vase; details are clear."
+      },
+      {
+        "image_id": "img_02",
+        "view_detected": "top",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Top view showing the rim clearly."
+      },
+      {
+        "image_id": "img_03",
+        "view_detected": "left",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Left profile view, clear and sharp."
+      }
+    ]
+  }
+}

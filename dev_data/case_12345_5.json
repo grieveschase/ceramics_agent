@@ -1,0 +1,480 @@
+{
+  "case_id": "12345",
+  "coverage": {
+    "agent_name": "coverage",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.8,
+    "notes": "The base image (img_00) has a close-up view but is slightly unclear due to low contrast and glare. Front and back views are present, but left and right profiles are missing. No complete base or interior image.",
+    "case_id": "12345",
+    "coverage_score_0_1": 0.6,
+    "views_present": {
+      "front": true,
+      "back": true,
+      "left": false,
+      "right": false,
+      "top": false,
+      "interior": false,
+      "base": false,
+      "base_macro": true,
+      "signature_macro": false
+    },
+    "image_assessments": [
+      {
+        "image_id": "img_00",
+        "view_detected": "base_macro",
+        "usable_for_id": true,
+        "quality_flags": [
+          "glare"
+        ],
+        "notes": "Close-up of base marking but glare makes it hard to read."
+      },
+      {
+        "image_id": "img_01",
+        "view_detected": "front",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Clear front view with good detail."
+      },
+      {
+        "image_id": "img_02",
+        "view_detected": "unknown",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Angle suggests a top view but doesn't clearly show the top surface."
+      },
+      {
+        "image_id": "img_03",
+        "view_detected": "back",
+        "usable_for_id": true,
+        "quality_flags": [],
+        "notes": "Clear back view but no distinct base or side profile visible."
+      }
+    ]
+  },
+  "visual_evidence": {
+    "agent_name": "visual_evidence",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.8,
+    "notes": "Glare in the base image affects readability of any marks. No clear view of the actual base shape or top surface. Good front and back views with visible glaze effects.",
+    "case_id": "12345",
+    "evidence": {
+      "object_class": "vase",
+      "key_observations": [
+        "Tall vase with gradient glaze coloration",
+        "Crazing visible in the glaze",
+        "Glossy surface sheen",
+        "Substantial color variation at the neck"
+      ],
+      "limitations": [
+        "Base shape not visible due to angle",
+        "Top rim detail partially obscured",
+        "Interior details not visible"
+      ],
+      "estimated_material": {
+        "label": "porcelain",
+        "confidence_0_1": 0.8,
+        "rationale": [
+          "Translucency of the material suggests porcelain",
+          "Glossy surface and fine glaze work typical of porcelain"
+        ],
+        "supporting_image_ids": [
+          "img_01",
+          "img_03"
+        ]
+      },
+      "construction": {
+        "method": "unknown",
+        "indicators": [],
+        "foot_type": "unknown",
+        "seams_present": "unknown",
+        "throwing_rings_present": "unknown",
+        "supporting_image_ids": []
+      },
+      "form_geometry": {
+        "symmetry": "symmetric",
+        "neck": "short",
+        "shoulder": "rounded",
+        "rim": "straight",
+        "proportions_notes": [
+          "Tall and narrow form with slight tapering"
+        ],
+        "supporting_image_ids": [
+          "img_01",
+          "img_03"
+        ]
+      },
+      "glaze_surface": {
+        "sheen": "gloss",
+        "effects": [
+          "crazing"
+        ],
+        "color_behavior_notes": [
+          "Gradient from dark at rim to light on body",
+          "Notable pooling and running indicating thick glaze application"
+        ],
+        "application_method_guess": "unknown",
+        "wear_notes": [
+          "Crazing suggests some age but well preserved"
+        ],
+        "supporting_image_ids": [
+          "img_01",
+          "img_02"
+        ]
+      },
+      "decoration": {
+        "presence": "moderate",
+        "motif_categories": [
+          "abstract"
+        ],
+        "technique_guess": "overglaze_enamel",
+        "layout_notes": [
+          "Decorative glazing appears in loose, flowing patterns around the shoulder"
+        ],
+        "supporting_image_ids": [
+          "img_01",
+          "img_02",
+          "img_03"
+        ]
+      },
+      "aging_condition": {
+        "condition_score_0_10": 7.0,
+        "flags": [
+          "chips",
+          "chips"
+        ],
+        "rationale": [
+          "Minor chips visible at the neck",
+          "Crazed glaze might indicate age"
+        ],
+        "supporting_image_ids": [
+          "img_01"
+        ]
+      }
+    }
+  },
+  "marks_report": {
+    "agent_name": "marks",
+    "input_image_ids_used": [
+      "img_00"
+    ],
+    "confidence_0_1": 0.8,
+    "notes": "The mark is obscured by glare but some details are visible. Further imagery with reduced glare could confirm readings.",
+    "case_id": "12345",
+    "marks_present": "yes",
+    "marks_present_confidence_0_1": 0.9,
+    "marks": [
+      {
+        "mark_id": "mark_01",
+        "mark_type": "impressed",
+        "location": "base",
+        "orientation": "upright",
+        "legibility": "medium",
+        "under_over_glaze": "unknown",
+        "content_type": "mixed",
+        "script_guess": "latin",
+        "verbatim_transcription": "[illegible]\n8\nO E",
+        "alternate_readings": [
+          "8 0 E",
+          "8 0 L"
+        ],
+        "symbol_description": [
+          "sunburst"
+        ],
+        "confidence_0_1": 0.7,
+        "supporting_image_ids": [
+          "img_00"
+        ],
+        "interpretation_notes": [
+          "The mark includes a sunburst symbol; possible upside-down letters."
+        ]
+      }
+    ],
+    "best_mark_for_id": "mark_01",
+    "negative_evidence_notes": [
+      "The base shows a mark with glare; no other images available for clearer view."
+    ]
+  },
+  "hypotheses": {
+    "agent_name": "hypotheses",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.7,
+    "notes": "The hypotheses are formed based on observable features and partial mark evidence. Marks are not fully legible, adding uncertainty.",
+    "case_id": "12345",
+    "hypotheses": [
+      {
+        "rank": 1,
+        "candidate_label": "European Studio Pottery Cluster",
+        "maker_or_cluster": "European Studio Pottery",
+        "attribution_level": "region_style_cluster",
+        "region": "Europe",
+        "date_range": "c. 1970–1990",
+        "confidence_0_1": 0.6,
+        "supporting_evidence": [
+          "Gradient glaze and abstract motifs common in European studio ceramics",
+          "Porcelain material with crazing indicates studio quality"
+        ],
+        "supporting_anchors": [
+          {
+            "source": "visual_evidence",
+            "path": "visual_evidence.glaze_surface.color_behavior_notes",
+            "claim": "Gradient glaze, common in European studio pottery",
+            "supporting_image_ids": [
+              "img_01",
+              "img_02",
+              "img_03"
+            ]
+          },
+          {
+            "source": "visual_evidence",
+            "path": "visual_evidence.decoration.technique_guess",
+            "claim": "Overglaze enamel decoration",
+            "supporting_image_ids": [
+              "img_01",
+              "img_02",
+              "img_03"
+            ]
+          }
+        ],
+        "contradictions": [
+          "Lack of specific European stylistic marks or symbols"
+        ],
+        "missing_evidence": [
+          "Signature_macro",
+          "Interior"
+        ],
+        "discriminators": [
+          "Signature style typical of European studios",
+          "Interior construction qualities"
+        ],
+        "highest_value_test": {
+          "test_type": "photo",
+          "request": "Capture a raking light photo of the base to enhance mark legibility.",
+          "expected_result_if_true": "Marks are more legible and reveal a European studio mark.",
+          "expected_result_if_false": "No clearer legibility, leaving European attribution uncertain."
+        }
+      },
+      {
+        "rank": 2,
+        "candidate_label": "East Asian Porcelain Cluster",
+        "maker_or_cluster": "East Asian Porcelain",
+        "attribution_level": "region_style_cluster",
+        "region": "East Asia",
+        "date_range": "mid to late 20th century",
+        "confidence_0_1": 0.5,
+        "supporting_evidence": [
+          "Porcelain material and glaze style are consistent with East Asian ceramics"
+        ],
+        "supporting_anchors": [
+          {
+            "source": "visual_evidence",
+            "path": "visual_evidence.estimated_material.label",
+            "claim": "Material consistent with porcelain typical in East Asian pottery",
+            "supporting_image_ids": [
+              "img_01",
+              "img_03"
+            ]
+          },
+          {
+            "source": "marks_report",
+            "path": "marks_report.marks[0].symbol_description",
+            "claim": "Sunburst symbol may relate to some East Asian motifs",
+            "supporting_image_ids": [
+              "img_00"
+            ]
+          }
+        ],
+        "contradictions": [
+          "Vase shape is less typical for East Asian vases"
+        ],
+        "missing_evidence": [
+          "Base clarity",
+          "Type of foot used"
+        ],
+        "discriminators": [
+          "Specific mark shapes common in East Asian ceramics",
+          "Specific glaze pooling or rim details"
+        ],
+        "highest_value_test": {
+          "test_type": "photo",
+          "request": "Capture a macro photo of the base under different lighting angles.",
+          "expected_result_if_true": "Marks may suggest known East Asian maker or style.",
+          "expected_result_if_false": "Marks remain unclear, weakening East Asian attribution."
+        }
+      }
+    ],
+    "global_limitations": [
+      "Base mark is unclear due to glare",
+      "No interior images available",
+      "Side profiles are missing",
+      "Lack of signature or distinctive maker's mark"
+    ]
+  },
+  "final_attribution": {
+    "agent_name": "resolver",
+    "input_image_ids_used": [
+      "img_00",
+      "img_01",
+      "img_02",
+      "img_03"
+    ],
+    "confidence_0_1": 0.6,
+    "notes": "The available evidence does not strongly support any single attribution. Issues such as glare on the base mark and missing views limit confidence.",
+    "case_id": "12345",
+    "final": {
+      "outcome": "inconclusive",
+      "top_3": [
+        {
+          "rank": 1,
+          "attribution": "European Studio Pottery Cluster",
+          "attribution_level": "region_style_cluster",
+          "confidence_band": "Low",
+          "confidence_0_1": 0.55,
+          "why": [
+            "Gradient glaze and abstract motifs suggest common features in European studio pottery.",
+            "Porcelain material with crazing supports studio quality craftsmanship."
+          ],
+          "why_not_others": [
+            "Marks are not clearly legible to confirm European studio origin.",
+            "Lack of strong marks or symbols typical of a specific European maker."
+          ],
+          "supporting_anchors": [
+            {
+              "source": "visual_evidence",
+              "path": "visual_evidence.glaze_surface.color_behavior_notes",
+              "claim": "Gradient glaze, common in European studio pottery",
+              "supporting_image_ids": [
+                "img_01",
+                "img_02",
+                "img_03"
+              ]
+            }
+          ],
+          "contradiction_anchors": [],
+          "missing_evidence_penalties": [
+            "Base clarity due to glare",
+            "No interior or side profile images"
+          ],
+          "key_discriminators": [
+            "Gradient glaze patterns",
+            "Abstract decoration motifs",
+            "Material type suggests studio craft"
+          ],
+          "what_would_change_mind": [
+            "Clearer mark images under different lighting",
+            "Interior construction details"
+          ]
+        },
+        {
+          "rank": 2,
+          "attribution": "East Asian Porcelain Cluster",
+          "attribution_level": "region_style_cluster",
+          "confidence_band": "Low",
+          "confidence_0_1": 0.45,
+          "why": [
+            "Porcelain material and glaze style are consistent with East Asian ceramics."
+          ],
+          "why_not_others": [
+            "Vase shape is less typical for East Asian pottery.",
+            "Potential symbols lack specific East Asian identifiers."
+          ],
+          "supporting_anchors": [
+            {
+              "source": "visual_evidence",
+              "path": "visual_evidence.estimated_material.label",
+              "claim": "Material consistent with porcelain typical in East Asian pottery",
+              "supporting_image_ids": [
+                "img_01",
+                "img_03"
+              ]
+            }
+          ],
+          "contradiction_anchors": [],
+          "missing_evidence_penalties": [
+            "Base clarity due to glare",
+            "Missing specific rim and foot details"
+          ],
+          "key_discriminators": [
+            "Porcelain material typical of the region",
+            "Sunburst symbol potential"
+          ],
+          "what_would_change_mind": [
+            "Clearer side profile and base images",
+            "Identifiable East Asian marks"
+          ]
+        },
+        {
+          "rank": 3,
+          "attribution": "Unknown",
+          "attribution_level": "unknown",
+          "confidence_band": "VeryLow",
+          "confidence_0_1": 0.3,
+          "why": [
+            "Lack of decisive evidence across multiple hypotheses."
+          ],
+          "why_not_others": [],
+          "supporting_anchors": [],
+          "contradiction_anchors": [],
+          "missing_evidence_penalties": [
+            "Base clarity",
+            "Multiple missing angles"
+          ],
+          "key_discriminators": [],
+          "what_would_change_mind": [
+            "Additional evidence or comparison with known artifacts"
+          ]
+        }
+      ],
+      "overall_summary": "The vase exhibits characteristics such as porcelain material and gradient glaze that align with both European studio pottery and East Asian porcelain clusters. However, due to base mark illegibility and missing views, no specific attribution can be confidently made. Further imagery and evidence are necessary for a more accurate attribution.",
+      "global_limitations": [
+        "Base mark is unclear due to glare",
+        "No interior images available",
+        "Side profiles are missing",
+        "Lack of signature or distinctive maker's mark"
+      ],
+      "recommended_next_photos": [
+        {
+          "priority": 1,
+          "view": "base_macro",
+          "reason": "To clarify the base mark which is currently obscured by glare.",
+          "how_to_shoot": "Use raking light to reduce glare and enhance legibility.",
+          "maps_to_missing_evidence": [
+            "Base clarity due to glare"
+          ]
+        },
+        {
+          "priority": 2,
+          "view": "interior",
+          "reason": "To check for construction details indicative of regional craftsmanship.",
+          "how_to_shoot": "Capture under good lighting to show material and craftsmanship.",
+          "maps_to_missing_evidence": [
+            "No interior or side profile images"
+          ]
+        },
+        {
+          "priority": 3,
+          "view": "left profile",
+          "reason": "To reveal side profiles and glaze application that might indicate style.",
+          "how_to_shoot": "Capture a clear side profile with even lighting.",
+          "maps_to_missing_evidence": [
+            "Side profiles are missing"
+          ]
+        }
+      ]
+    }
+  }
+}
