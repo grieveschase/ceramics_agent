@@ -1,0 +1,355 @@
+[
+  {
+    "image_path": "C:\\projects\\LLM\\ceramics_agent\\images\\12345\\32727998.jpg",
+    "labels": [
+      {
+        "description": "Creative arts",
+        "score": 0.7741,
+        "topicality": 0.0
+      },
+      {
+        "description": "Dishware",
+        "score": 0.76,
+        "topicality": 0.0007
+      },
+      {
+        "description": "Serveware",
+        "score": 0.7448,
+        "topicality": 0.0044
+      },
+      {
+        "description": "Pottery",
+        "score": 0.7368,
+        "topicality": 0.2753
+      },
+      {
+        "description": "Craft",
+        "score": 0.59,
+        "topicality": 0.0003
+      },
+      {
+        "description": "Ceramic",
+        "score": 0.5732,
+        "topicality": 0.1824
+      },
+      {
+        "description": "Stoneware",
+        "score": 0.5252,
+        "topicality": 0.3845
+      }
+    ],
+    "localized_objects": []
+  },
+  {
+    "image_path": "C:\\projects\\LLM\\ceramics_agent\\images\\12345\\32727999.jpg",
+    "labels": [
+      {
+        "description": "Yellow",
+        "score": 0.9534,
+        "topicality": 0.0475
+      },
+      {
+        "description": "Vase",
+        "score": 0.9521,
+        "topicality": 0.8512
+      },
+      {
+        "description": "Pottery",
+        "score": 0.9291,
+        "topicality": 0.3006
+      },
+      {
+        "description": "Ceramic",
+        "score": 0.9006,
+        "topicality": 0.2226
+      },
+      {
+        "description": "Stoneware",
+        "score": 0.8795,
+        "topicality": 0.179
+      },
+      {
+        "description": "Artifact",
+        "score": 0.8756,
+        "topicality": 0.003
+      },
+      {
+        "description": "Porcelain",
+        "score": 0.8347,
+        "topicality": 0.0709
+      },
+      {
+        "description": "Urn",
+        "score": 0.8127,
+        "topicality": 0.5287
+      },
+      {
+        "description": "Creative arts",
+        "score": 0.7833,
+        "topicality": 0.0
+      },
+      {
+        "description": "Antique",
+        "score": 0.7642,
+        "topicality": 0.053
+      },
+      {
+        "description": "Craft",
+        "score": 0.6844,
+        "topicality": 0.0006
+      },
+      {
+        "description": "Natural material",
+        "score": 0.6816,
+        "topicality": 0.0001
+      },
+      {
+        "description": "Still life photography",
+        "score": 0.6112,
+        "topicality": 0.0003
+      },
+      {
+        "description": "Still life",
+        "score": 0.5647,
+        "topicality": 0.0005
+      },
+      {
+        "description": "Collectable",
+        "score": 0.5087,
+        "topicality": 0.0005
+      }
+    ],
+    "localized_objects": [
+      {
+        "name": "Vase",
+        "score": 0.8878,
+        "bounds": [
+          {
+            "x": 0.13476563,
+            "y": 0.059570313
+          },
+          {
+            "x": 0.8203125,
+            "y": 0.059570313
+          },
+          {
+            "x": 0.8203125,
+            "y": 0.9453125
+          },
+          {
+            "x": 0.13476563,
+            "y": 0.9453125
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "image_path": "C:\\projects\\LLM\\ceramics_agent\\images\\12345\\32728000.jpg",
+    "labels": [
+      {
+        "description": "Vase",
+        "score": 0.9401,
+        "topicality": 0.7709
+      },
+      {
+        "description": "Pottery",
+        "score": 0.8997,
+        "topicality": 0.3479
+      },
+      {
+        "description": "Ceramic",
+        "score": 0.8885,
+        "topicality": 0.1778
+      },
+      {
+        "description": "Artifact",
+        "score": 0.8812,
+        "topicality": 0.0078
+      },
+      {
+        "description": "Stoneware",
+        "score": 0.8441,
+        "topicality": 0.1809
+      },
+      {
+        "description": "Porcelain",
+        "score": 0.7905,
+        "topicality": 0.0474
+      },
+      {
+        "description": "Creative arts",
+        "score": 0.7841,
+        "topicality": 0.0
+      },
+      {
+        "description": "Antique",
+        "score": 0.7775,
+        "topicality": 0.1073
+      },
+      {
+        "description": "Natural material",
+        "score": 0.7015,
+        "topicality": 0.0001
+      },
+      {
+        "description": "Craft",
+        "score": 0.6928,
+        "topicality": 0.0015
+      },
+      {
+        "description": "Urn",
+        "score": 0.6918,
+        "topicality": 0.2268
+      },
+      {
+        "description": "Still life photography",
+        "score": 0.6154,
+        "topicality": 0.0001
+      },
+      {
+        "description": "Still life",
+        "score": 0.5512,
+        "topicality": 0.0001
+      },
+      {
+        "description": "Collectable",
+        "score": 0.5164,
+        "topicality": 0.0022
+      }
+    ],
+    "localized_objects": [
+      {
+        "name": "Vase",
+        "score": 0.8911,
+        "bounds": [
+          {
+            "x": 0.11816406,
+            "y": 0.030761719
+          },
+          {
+            "x": 0.859375,
+            "y": 0.030761719
+          },
+          {
+            "x": 0.859375,
+            "y": 0.8984375
+          },
+          {
+            "x": 0.11816406,
+            "y": 0.8984375
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "image_path": "C:\\projects\\LLM\\ceramics_agent\\images\\12345\\32728001.jpg",
+    "labels": [
+      {
+        "description": "Vase",
+        "score": 0.9625,
+        "topicality": 0.8799
+      },
+      {
+        "description": "Yellow",
+        "score": 0.953,
+        "topicality": 0.0724
+      },
+      {
+        "description": "Pottery",
+        "score": 0.9341,
+        "topicality": 0.2039
+      },
+      {
+        "description": "Ceramic",
+        "score": 0.9065,
+        "topicality": 0.2142
+      },
+      {
+        "description": "Stoneware",
+        "score": 0.9011,
+        "topicality": 0.0691
+      },
+      {
+        "description": "Porcelain",
+        "score": 0.8972,
+        "topicality": 0.0939
+      },
+      {
+        "description": "Artifact",
+        "score": 0.8646,
+        "topicality": 0.0017
+      },
+      {
+        "description": "Urn",
+        "score": 0.7813,
+        "topicality": 0.3029
+      },
+      {
+        "description": "Creative arts",
+        "score": 0.7795,
+        "topicality": 0.0
+      },
+      {
+        "description": "Glass",
+        "score": 0.7412,
+        "topicality": 0.1589
+      },
+      {
+        "description": "Natural material",
+        "score": 0.7008,
+        "topicality": 0.0001
+      },
+      {
+        "description": "Antique",
+        "score": 0.6925,
+        "topicality": 0.0396
+      },
+      {
+        "description": "Serveware",
+        "score": 0.6657,
+        "topicality": 0.0008
+      },
+      {
+        "description": "Craft",
+        "score": 0.6521,
+        "topicality": 0.0003
+      },
+      {
+        "description": "Still life photography",
+        "score": 0.6266,
+        "topicality": 0.0003
+      },
+      {
+        "description": "Still life",
+        "score": 0.5433,
+        "topicality": 0.0006
+      }
+    ],
+    "localized_objects": [
+      {
+        "name": "Vase",
+        "score": 0.8352,
+        "bounds": [
+          {
+            "x": 0.13476563,
+            "y": 0.06640625
+          },
+          {
+            "x": 0.8828125,
+            "y": 0.06640625
+          },
+          {
+            "x": 0.8828125,
+            "y": 0.92578125
+          },
+          {
+            "x": 0.13476563,
+            "y": 0.92578125
+          }
+        ]
+      }
+    ]
+  }
+]

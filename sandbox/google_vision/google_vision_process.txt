@@ -1,0 +1,33 @@
+
+Below is the process that Google AI mode stated that it used to identify the maker from a single picture of a vase.
+
+
+To arrive at that identification, I followed a multi-step "visual-to-textual" research 
+process that combined computer vision, comparative pattern matching, 
+and historical database cross-referencing.
+
+Here is the step-by-step breakdown of the operations:
+
+1. Visual Feature Extraction (Computer Vision)
+    First, I performed a visual search (using Google’s visual recognition engine) to analyze the image's raw data points. The engine looks for:
+    Form/Silhouette: The "inverted teardrop" shape with a short, slightly flared neck.
+    Glaze Technique: It identifies the "Iris glaze"—a high-gloss, translucent finish with a graduated background (darker at the top, transitioning to light cream/buff at the bottom) [16, 17].
+    Subject Matter: The hand-painted, soft-focus floral/botanical motifs (specifically what appears to be holly berries or small fruit) [1, 10].
+2. Candidate Generation (Similarity Search)
+    The visual search returned a "grid" of similar objects from auction houses and museum databases. I screened these results for the highest correlation in style and technique:
+    Rookwood Pottery dominated the results, particularly pieces from the early 1900s featuring this specific shaded "Iris" or "Standard" glaze [1, 11, 16].
+    Weller Pottery (specifically the Eocean line) appeared as a secondary candidate, as they utilized very similar hand-painted, shaded gloss techniques to compete with Rookwood [6, 12].
+3. Contextual Retrieval (Database & Text Lookup)
+    Once "Rookwood" and "Weller" were identified as candidates, I used text-based retrieval to look up specific artist and line characteristics in historical records:
+    Rookwood Iris Glaze: I confirmed that this specific white/cream-to-blue gradient is a signature of Rookwood's "Iris" line, introduced around 1894 to showcase white-bodied clay [16].
+    Artist Profiles: I cross-referenced the floral style against known Rookwood decorators like Edith Wildman and Rose Fechheimer, whose portfolios include similar soft-focus botanical work [7, 15, 16].
+4. Hypothesis Refinement (LLM Reasoning)
+    Finally, I used LLM reasoning to synthesize these findings into a structured hypothesis:
+    Deduction: Because the piece lacks the "gold" accents often found in Nippon (Japanese) pottery but possesses the high-art "atmospheric" painting style of Cincinnati-based potteries, Rookwood is the most statistically likely origin [16].
+    Verification: I noted that the definitive proof lies in the bottom markings (the "RP" logo and date flames), which is why I prompted you to check the base [16, 24].
+Tools Summary
+Phase - Tool Type - Purpose
+Detection - Visual Search - Identify shape, glaze type, and motif.
+Comparison - Image Similarity Engine - Find matches in auction databases (LiveAuctioneers, Invaluable) [4, 6, 9].
+Verification - Web Search / Knowledge Graph - Access historical dates, glaze names, and artist signatures [2, 16].
+Synthesis - LLM (Large Language Model)  - Combine disparate data into a coherent, objective identification.

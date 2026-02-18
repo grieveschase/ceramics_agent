@@ -1,0 +1,177 @@
+[
+  {
+    "image_path": "C:\\projects\\LLM\\ceramics_agent\\images\\rookwood_single\\32727997.jpg",
+    "labels": [
+      {
+        "description": "Vase",
+        "score": 0.94,
+        "topicality": 0.8247
+      },
+      {
+        "description": "Pottery",
+        "score": 0.9312,
+        "topicality": 0.4565
+      },
+      {
+        "description": "Ceramic",
+        "score": 0.8926,
+        "topicality": 0.2455
+      },
+      {
+        "description": "Stoneware",
+        "score": 0.8668,
+        "topicality": 0.2767
+      },
+      {
+        "description": "Artifact",
+        "score": 0.8457,
+        "topicality": 0.0027
+      },
+      {
+        "description": "Porcelain",
+        "score": 0.8396,
+        "topicality": 0.0805
+      },
+      {
+        "description": "Creative arts",
+        "score": 0.7779,
+        "topicality": 0.0
+      },
+      {
+        "description": "Craft",
+        "score": 0.6927,
+        "topicality": 0.0011
+      },
+      {
+        "description": "Urn",
+        "score": 0.6924,
+        "topicality": 0.2575
+      },
+      {
+        "description": "Serveware",
+        "score": 0.6674,
+        "topicality": 0.0007
+      },
+      {
+        "description": "Antique",
+        "score": 0.6371,
+        "topicality": 0.0863
+      },
+      {
+        "description": "Still life photography",
+        "score": 0.6149,
+        "topicality": 0.0002
+      },
+      {
+        "description": "Still life",
+        "score": 0.542,
+        "topicality": 0.0005
+      }
+    ],
+    "localized_objects": [
+      {
+        "name": "Vase",
+        "score": 0.9267,
+        "bounds": [
+          {
+            "x": 0.1328125,
+            "y": 0.055664063
+          },
+          {
+            "x": 0.80859375,
+            "y": 0.055664063
+          },
+          {
+            "x": 0.80859375,
+            "y": 0.94921875
+          },
+          {
+            "x": 0.1328125,
+            "y": 0.94921875
+          }
+        ]
+      }
+    ],
+    "web_detection": {
+      "webEntities": [
+        {
+          "entityId": "/m/02s195",
+          "score": 0.38811657,
+          "description": "Vase"
+        },
+        {
+          "entityId": "/g/122rcy3t",
+          "score": 0.3085,
+          "description": "Earthenware"
+        }
+      ],
+      "visuallySimilarImages": [
+        {
+          "url": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMMaKFcDpBT1m75FEFOSfAQQEBSifcEgRRQYzk~tplv-tiktokx-origin.image?dr=9636&x-expires=1771405200&x-signature=wUi3W16OFVmPDzmwhh9AUhwz%2F1k%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=55bbe6a9&idc=useast8"
+        },
+        {
+          "url": "https://philadelphiaencyclopedia.org/wp-content/uploads/2015/05/LenoxVasePMA.jpg"
+        },
+        {
+          "url": "https://newcombartmuseum.tulane.edu/wp-content/uploads/sites/5/2017/07/Spanish-dagger.jpg"
+        },
+        {
+          "url": "https://ids.si.edu/ids/deliveryService?id=CHSDM-1994-117-6EllenMcDermott&max_w=550"
+        },
+        {
+          "url": "https://i.etsystatic.com/49380210/r/il/df6148/7709492364/il_fullxfull.7709492364_rzmn.jpg"
+        },
+        {
+          "url": "https://images.ctfassets.net/i01duvb6kq77/c73d508ff05206b5229a0c62c82f0a8f/00d6a82961fceb0d337d4fac669bf872/90402_BK_1976_48.jpeg?w=1100&q=80&fm=webp"
+        },
+        {
+          "url": "https://museumuf.hanyang.ac.kr/b/file/thumb/AZqf7jbvcKe9jMDDGKkncw/x.jpg"
+        },
+        {
+          "url": "https://www.shanghaimuseum.net/mu/upload/202405/ba718c0c-89a0-497e-8eef-4f5f2d5e2cc1.jpg"
+        },
+        {
+          "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/239719/2325518/main-image"
+        },
+        {
+          "url": "http://www.uch-china.com/shuixia/upload/2021-11-22/1637565660168ff8080817d27870e168017d4684fc0833da.jpg"
+        },
+        {
+          "url": "https://lisa.gerda-henkel-stiftung.de/binaries/content/18910/roem._kanne_810x506.jpg?t=1750749918"
+        },
+        {
+          "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/pic/202504/16/a879bd1a-58cf-47bb-9282-582001ae5944.jpg.2"
+        },
+        {
+          "url": "https://www.museumgouda.nl/wp-content/uploads/2025/03/07859.jpg"
+        },
+        {
+          "url": "http://ci.china.com.cn/pic/2025-09/16/91e84458-65b3-4231-86bb-c7235a61b6c6.png.2"
+        },
+        {
+          "url": "https://www.hkpm.org.hk/files/record/audio-guide/23/G3_3010_600X600-1734510025.jpg"
+        },
+        {
+          "url": "https://iiif.discovernewfields.org/iiif/3/29778-0912a812226fdd18__small/full/max/0/default.jpg"
+        },
+        {
+          "url": "https://www.trompenrueb.nl/wp-content/uploads/2025/09/tromp-en-rueb_Zuurvaatje.homepage.jpg"
+        },
+        {
+          "url": "https://ids.si.edu/ids/deliveryService?id=FS-F1945.2_001"
+        },
+        {
+          "url": "https://colbase.nich.go.jp/media/tnm/TG-246/image/thumbnail/TG-246_E0024886.jpg"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQF8BbQe-Ax9bg/feedshare-shrink_800/B56ZuUKy6fKsAg-/0/1767717419696?e=2147483647&v=beta&t=guPOWH0lqbwR1sj-CgqhHmvB_z968drag9D-f0UUn_o"
+        }
+      ],
+      "bestGuessLabels": [
+        {
+          "label": "vase"
+        }
+      ]
+    }
+  }
+]

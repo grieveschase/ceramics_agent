@@ -34,14 +34,24 @@ def download_images(case_id: str, image_urls: list[str]) -> Path:
 
 
 ## RookWood Vase
-case_id="12345"
-image_urls=[
-    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/62930/32728000.jpg",
-    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/62930/32727999.jpg",
-    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/62930/32728001.jpg",
-    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/62930/32727998.jpg",  # Bottom Image.
+# case_id="12345"
+# image_urls=[
+#     r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/62930/32728000.jpg",
+#     r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/62930/32727999.jpg",
+#     r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/62930/32728001.jpg",
+#     r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/62930/32727998.jpg",  # Bottom Image.
 
-    ]
+#     ]
+
+# Lindstrom - two fenton vases
+case_id = "two_fenton_vases"
+image_urls = [r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/63083/32846245.jpg",
+    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/63083/32846246.jpg",
+    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/63083/32846247.jpg",
+    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/63083/32846248.jpg",
+    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/63083/32846249.jpg",
+    r"https://946e583539399c301dc7-100ffa5b52865b8ec92e09e9de9f4d02.ssl.cf2.rackcdn.com/63083/32846250.jpg"]
+
 img_dir:Path = download_images(case_id, image_urls)
 
 print(img_dir)

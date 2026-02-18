@@ -1,0 +1,10 @@
+# Sandbox: Google Vision API detection step (REST transport).
+# Install in project venv: pip install -r sandbox/google_vision/requirements.txt
+# See: https://cloud.google.com/vision/docs/request
+google-auth>=2.0.0
+httpx>=0.25.0
+python-dotenv>=1.0.0
+pillow>=10.0.0
+numpy>=2.0.0
+openai>=2.16.0,<3
+pydantic>=2.0.0,<3
